@@ -30,8 +30,6 @@ Built by [Donavan White](https://github.com/digi-cazter) — powered with **Pyda
 - **Ollama integration**: works with `/api/chat` and falls back to `/api/generate`.
 
 ---
-![Speculate Screenshot](./screenshot.png)
----
 
 ## 📂 Project Structure
 
@@ -189,21 +187,7 @@ Each scenario prints:
 - Accuracy bar + threshold info.
 - Suite summary at the bottom.
 
-```
-Scenario: test_json_greeting
-Mode: multi-shot
-Seed: random per-run
-
-┏━━━━━┳━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Run ┃ Result┃ Seed   ┃ Details                     ┃
-┡━━━━━╇━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-┃ 1   ┃ PASS  ┃  98765 ┃ OK (1 step)                 ┃
-┃ 2   ┃ FAIL  ┃ 123456 ┃ Step 1 failed: Expected Hi  ┃
-└─────┴───────┴────────┴─────────────────────────────┘
-
-Summary: 1/2 passes ██████████░░░░░░░░  50.0%  (threshold 0.90)
-✖ Some runs failed.
-```
+![Speculate Screenshot](./screenshot.png)
 
 ---
 
@@ -223,13 +207,6 @@ Summary: 1/2 passes ██████████░░░░░░░░  50.0
 ```bash
 pip install -e .
 speculate scenarios/
-```
-
-- Build & publish (requires `build` and `twine`):
-
-```bash
-python -m build
-twine upload dist/*
 ```
 
 ---
