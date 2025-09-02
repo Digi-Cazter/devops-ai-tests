@@ -30,6 +30,8 @@ Built by [Donavan White](https://github.com/digi-cazter) — powered with **Pyda
 - **Ollama integration**: works with `/api/chat` and falls back to `/api/generate`.
 
 ---
+![Speculate Screenshot](./screenshot.png)
+---
 
 ## 📂 Project Structure
 
