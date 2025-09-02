@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "speculate-llm"
 version = "0.1.0"
 packages = ["speculate"] 
-description = "BDD-style LLM testing framework with rich CLI output and Ollama support."
+description = "Speculate is a BDD-style framework for validating LLM behavior, offering rich CLI reporting and support for multiple backends like Ollama, OpenAI, and more."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
