@@ -18,13 +18,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # 2) Copy code so the image can run even without a bind mount
 #    (Bind mount in compose will override these files during dev)
 #    NOTE: speculate is now a PACKAGE (directory), not a single file.
-COPY cli.py /app/
-COPY speculate /app/speculate
-COPY models /app/models
-COPY scenarios /app/scenarios
+COPY . /app
 
 # Optional: ensure package is importable without relying on cwd
 ENV PYTHONPATH=/app
 
 # Default command; docker-compose can override with entrypoint if desired
-CMD ["python", "-u", "cli.py", "./scenarios"]
+CMD ["python", "-m", "speculate.cli", "./scenarios"]

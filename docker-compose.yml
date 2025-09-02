@@ -22,7 +22,7 @@ services:
       LLM_ACCURACY_THRESHOLD: "0.9"      # suite-wide required accuracy
 
     # Reliable invocation (avoids the __main__ confusion)
-    entrypoint: ["python3", "-u", "cli.py", "./scenarios"]
+    entrypoint: ["python3", "-m", "speculate.cli", "./scenarios"]
 
     # For Linux, ensure the container can resolve host.docker.internal
     extra_hosts:
