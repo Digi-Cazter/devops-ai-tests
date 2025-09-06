@@ -1,3 +1,7 @@
+**⚠️ Disclaimer**  
+This project is under **active development**. Features, APIs, and behavior may change at any time.  
+A fully stable release is **not yet available**.
+
 # speculate
 
 **speculate** is a lightweight, Docker-ready **behavior-driven testing framework** for Large Language Models (LLMs).  
